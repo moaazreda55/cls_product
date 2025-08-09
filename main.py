@@ -34,3 +34,5 @@ async def predict(file: UploadFile = File(...)):
     image.save("image.jpg")
     preds = classifier_facebook("image.jpg")
     return {"message":"Image uploaded successfully" ,"preds" : preds}
+
+
