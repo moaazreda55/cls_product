@@ -11,3 +11,5 @@ classifier_facebook = pipeline("image-classification",model="models/facebook")
 if __name__ == "__main__":
     
     print("this for kidding just do nothing")
+
+    
