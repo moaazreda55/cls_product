@@ -1,10 +1,11 @@
 from transformers import pipeline 
 
-classifier_google = pipeline("image_classification",model="google")
 
-classifier_resnet = pipeline("image_classification",model="resnet50")
+classifier_google = pipeline("image-classification",model="models/google")
 
-classifier_facebook = pipeline("image_classification",model="facebook")
+classifier_resnet = pipeline("image-classification",model="models/resnet50")
+
+classifier_facebook = pipeline("image-classification",model="models/facebook")
 
 
 if __name__ == "__main__":
